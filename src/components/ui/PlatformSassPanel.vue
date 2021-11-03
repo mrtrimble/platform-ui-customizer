@@ -75,7 +75,7 @@ const toggleSassPanel = () => store.toggleSassPanel();
 <template>
   <div id="right" class="drawer drawer-right animated slideInRight fastest">
     <div class="drawer__inner">
-      <div class="drawer__content">
+      <div class="drawer__content h-100">
         <div class="flex flex--justify-between">
           <h2>SCSS Config</h2>
           <div>
@@ -89,8 +89,8 @@ const toggleSassPanel = () => store.toggleSassPanel();
             </button>
           </div>
         </div>
-        <div class="block-container">
-          <highlightjs class="h-75 w-100 my-3" language="sass" :code="code" />
+        <div class="block-container h-100">
+          <highlightjs class="h-75 w-100 my-3 overflow-y--scroll" language="sass" :code="code" />
         </div>
       </div>
     </div>
