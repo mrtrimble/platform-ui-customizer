@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+# Platform UI Customizer
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
+User Interface to customize Platform UI colors, spacing, typograhy, and icons.
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+## Installation
+Clone the repository
+```
+git clone https://github.com/mrtrimble/platform-ui-customizer.git
+```
+Install packages
+```
+npm install
+```
+Run the dev environment
+```
+npm run dev
+```
+
+## Dependencies
+- Platform UI
+- Vite
+- Vue 3
+- Vue-router 4
+- Pinia State Management
+- Animate.css
+- Highlightjs
