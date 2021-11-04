@@ -75,7 +75,7 @@ const toggleSassPanel = () => store.toggleSassPanel();
 <template>
   <div id="right" class="drawer drawer-right animated slideInRight fastest">
     <div class="drawer__inner">
-      <div class="drawer__content h-100">
+      <div class="drawer__content h-100 overflow-hidden">
         <div class="flex flex--justify-between">
           <h2>SCSS Config</h2>
           <div>

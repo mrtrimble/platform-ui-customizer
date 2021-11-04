@@ -1,7 +1,7 @@
 <template>
   <aside
     role="sidebar"
-    class="sidebar hide-lg-tablet-down tablet-up-3 lg-tablet-up-2"
+    class="sidebar hide-lg-tablet-down tablet-up-3 lg-tablet-up-2 background-white"
   >
     <nav>
       <ul class="sidebar-menu list active">

@@ -11,7 +11,6 @@ import PlatformSassPanel from "./components/ui/PlatformSassPanel.vue";
 import { useStore } from "./stores/main";
 const store = useStore();
 const sassPanelOpen = computed(() => store.sassPanelOpen);
-
 </script>
 
 <template>
@@ -24,27 +23,27 @@ const sassPanelOpen = computed(() => store.sassPanelOpen);
       <router-view />
     </article>
   </main>
-  <Teleport v-if="sassPanelOpen" to="#teleport">
-    <PlatformSassPanel />
-  </Teleport>
+    <Teleport v-if="sassPanelOpen" to="#teleport">
+      <PlatformSassPanel />
+    </Teleport>
 </template>
 
 <style>
-:root{
+:root {
   --header-height: 4.5rem;
 }
-body{
+body {
   overflow: hidden;
 }
-.main-content{
-  height:100vh;
+.main-content {
+  height: 100vh;
   overflow-y: auto;
-  align-items: stretch
+  align-items: stretch;
 }
 
-.content{
-  position:relative;
-  top:var(--header-height);
+.content {
+  position: relative;
+  top: var(--header-height);
 }
 
 .sidebar {

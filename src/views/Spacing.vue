@@ -11,20 +11,20 @@ const spacing = computed(() => spaceStore.spacing);
 <template>
   <div>
     <h1>Spacing</h1>
-      <div class="spacing">
-        <PlatformSpaceCard
-          v-for="(space, index) in spacing"
-          :key="index"
-          :space="space"
-        />
-        <PlatformAddSpaceCard />
-      </div>
+    <section class="spacing background-white mb-4">
+      <PlatformSpaceCard
+        v-for="(space, index) in spacing"
+        :key="index"
+        :space="space"
+      />
+      <PlatformAddSpaceCard />
+    </section>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.spacing{
-  width:100%;
-  max-width:500px;
+.spacing {
+  width: 100%;
+  max-width: 500px;
 }
 </style>
